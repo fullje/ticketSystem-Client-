@@ -1,0 +1,26 @@
+﻿<Window x:Class="ClientTicket.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientTicket"
+        mc:Ignorable="d"
+        Title="Ticket Client" Height="250" Width="750">
+    <Grid Background="Gray">
+        <Label Content="Nazwa użytkownika:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Label Content="Nazwa komputera:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Label Content="Adres komputera:" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Label Content="Numer wewnetrzny:" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <Label Content="Numer pokoju:" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Height="25" Width="120"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Height="25" Margin="135,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="computerName" HorizontalAlignment="Left" Height="25" Margin="135,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Height="25" Margin="135,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="telNumber" HorizontalAlignment="Left" Height="25" Margin="135,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="roomNumber" HorizontalAlignment="Left" Height="25" Margin="135,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="145" Margin="274,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" SpellCheck.IsEnabled="True"/>
+        <Button x:Name="sendEvent" Content="Wyślij zgłoszenie" HorizontalAlignment="Left" Margin="274,160,0,0" VerticalAlignment="Top" Width="452" Height="47" Click="sendEvent_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="212" Margin="262,0,0,0" VerticalAlignment="Top" Width="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="2" Margin="0,212,0,0" VerticalAlignment="Top" Width="742"/>
+
+    </Grid>
+</Window>
